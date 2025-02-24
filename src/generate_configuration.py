@@ -181,11 +181,28 @@ shape_config = {
     ##   http://patentimages.storage.googleapis.com/EP0219944A2/imgf0002.png
     ## fixed_z overrides the z portion of the column ofsets above.
     ## NOTE: THIS DOESN'T WORK QUITE LIKE I'D HOPED.
-    'fixed_angles':  [d2r * 10, d2r * 10, 0, 0, 0, d2r * -15, d2r * -15],
-    'fixed_x':  [-41.5, -22.5, 0, 20.3, 41.4, 65.5, 89.6],  # relative to the middle finger
-    'fixed_z':  [12.1, 8.3, 0, 5, 10.7, 14.5, 17.5],
-    'fixed_tenting':  d2r * 0,
+#     'fixed_angles':  [d2r * 10, d2r * 10, 0, 0, 0, d2r * -15, d2r * -15],
+#     'fixed_x':  [-41.5, -22.5, 0, 20.3, 41.4, 65.5, 89.6],  # relative to the middle finger
+#     'fixed_z':  [12.1, 8.3, 0, 5, 10.7, 14.5, 17.5],
+#     'fixed_tenting':  d2r * 0,
+#
+# Wesley Ren's settings:
+#
+    'fixed_angles': [
+        d2r * 12,  # Pinky
+        d2r * 7,   # Ring
+        d2r * 0,   # Middle
+        d2r * 0,   # Index
+        d2r * 0,   # Inner column
+        d2r * -25,  # Thumb cluster 1
+        d2r * -20   # Thumb cluster 2
+    ],
 
+    'fixed_x': [-40, -20, 0, 25, 41.4, 65.5, 89.6],  # Horizontal offsets relative to middle finger
+
+    'fixed_z': [11, 6, 0, 5, 10.7, 14.5, 17.5],  # Vertical offsets (height adjustments)
+
+    'fixed_tenting': d2r * 5,  # Overall tenting angle
     #################
     ## Switch Hole ##
     #################
